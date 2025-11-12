@@ -1,0 +1,5 @@
+{
+  "name": "Life Inventory",
+  "description": "A mobile-first web application that serves as a dedicated digital inventory of your entire life, separating 'what you have' from 'what you do'.",
+  "requestFramePermissions": []
+}

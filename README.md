@@ -1,11 +1,28 @@
-<div align="center">
+# Life Inventory
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A minimalist, mobile-first web app to inventory your life, separating **what you have** from **what you do**.
 
-  <h1>Built with AI Studio</h2>
+---
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+### The Problem It Solves
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+We often mix our physical inventory (things we own) with our tasks and rituals (things we do). A shopping list gets cluttered with reminders, and a to-do list might contain items we need to buy. This app solves that core confusion by creating a single, dedicated, and beautifully organized source of truth for **what you own**. It elevates a simple whiteboard list into a clear and infinitely expandable digital system.
 
-</div>
+### Core Features
+
+-   **Hierarchical Organization:** Create categories and sub-categories to mirror your real-life organization (e.g., `Closet > Wardrobe > Shoes`).
+-   **Dynamic Structure:** Add and delete new categories on the fly to build a system that is perfectly tailored to your life.
+-   **Simple Item Management:** Quickly add, view, and delete items within any category. The interface is designed for speed and clarity.
+-   **Persistent Storage:** Your inventory is securely saved to a Firebase backend, ensuring your data is safe and persistent across sessions. No need to create an account—it works anonymously and automatically.
+-   **Elegant & Focused Design:** A clean, minimalist interface with a sophisticated color palette (`Warm Cream` & `Slate Gray`) designed to be calm, focused, and intuitive to use.
+
+### Tech Stack
+
+-   **Frontend:** React with TypeScript
+-   **Styling:** Tailwind CSS
+-   **Backend & Database:** Google Firebase (Firestore & Anonymous Authentication)
+-   **Icons:** Lucide React
+
+### Setup & Installation
+
+To run this project, you need to connect it to your own free Firebase backend. For detailed step-by-step instructions, please see the `requirements.txt` file.

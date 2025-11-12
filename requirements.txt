@@ -1,0 +1,46 @@
+# Application Setup Instructions
+
+This application requires a Google Firebase project for its database and user authentication services. Follow these steps to configure the project.
+
+### Prerequisites
+- A Google Account.
+- A modern web browser.
+
+### Step 1: Create a Firebase Project
+1. Go to the [Firebase Console](https://console.firebase.google.com/).
+2. Click on "Add project" and follow the on-screen instructions to create a new project. You can disable Google Analytics for this simple project if you wish.
+
+### Step 2: Create a Web App
+1. Inside your new Firebase project, click the Web icon (`</>`) to add a new web app.
+2. Give your app a nickname (e.g., "Life Inventory App") and click "Register app".
+3. Firebase will provide you with a `firebaseConfig` object. **Copy this entire object.** You will need it for the next step.
+
+### Step 3: Configure the Application
+1. In this project's file directory, open the `index.html` file.
+2. Locate the `<script>` tag that defines the `__firebase_config` variable. It will look like this:
+   ```html
+   <script>
+     const __firebase_config = JSON.stringify({
+       apiKey: "YOUR_API_KEY",
+       authDomain: "YOUR_AUTH_DOMAIN",
+       projectId: "YOUR_PROJECT_ID",
+       // ... and so on
+     });
+   </script>
+   ```
+3. **Replace the entire placeholder JSON object** with the `firebaseConfig` object you copied from the Firebase console. Make sure it remains a JSON string by keeping `JSON.stringify(...)`.
+
+### Step 4: Enable Firestore Database
+1. In the Firebase Console, go to the "Build" section in the left-hand menu and click on "Firestore Database".
+2. Click "Create database".
+3. Choose to start in **Test mode**. This allows open read/write access for development.
+4. Select a location for your database and click "Enable".
+
+### Step 5: Enable Anonymous Authentication
+1. In the Firebase Console, go to the "Build" section and click on "Authentication".
+2. Go to the "Sign-in method" tab.
+3. Find "Anonymous" in the list of providers, click it, enable the toggle, and save.
+
+---
+
+Once these five steps are completed, the application will be fully configured and ready to run. It will connect to your Firebase project to store and retrieve data.
